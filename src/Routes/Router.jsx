@@ -20,6 +20,7 @@ import AllClasses from '../Pages/All Classes/AllClasses';
 import ClassDetailPage from '../Pages/All Classes/ClassDetailPage';
 import Payment from '../Components/Payment';
 import AboutUs from '../Pages/About US/AboutUs';
+import ErrorPage from '../Pages/ErrorPage';
 
 const Router = createBrowserRouter([
     {
@@ -118,6 +119,10 @@ const Router = createBrowserRouter([
                 element: <AdminProfile></AdminProfile>
             }
         ]
+    },
+    {
+        path:'*',
+        element:<ErrorPage></ErrorPage>
     }
 ])
 
