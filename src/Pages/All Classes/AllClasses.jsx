@@ -25,15 +25,15 @@ const AllClasses = () => {
     return <p>Failed to load classes.</p>;
   }
 
-  const [sortType, setSortType] = useState(null);
-  const sortedClasses = [...classes];
+  // const [sortType, setSortType] = useState(null);
+  // const sortedClasses = [...classes];
 
-  // Sorting Logic
-  if (sortType === "price") {
-    sortedClasses.sort((a, b) => a.price - b.price);
-  } else if (sortType === "enrollment") {
-    sortedClasses.sort((a, b) => b.totalEnrollment - a.totalEnrollment);
-  }
+  // // Sorting Logic
+  // if (sortType === "price") {
+  //   sortedClasses.sort((a, b) => a.price - b.price);
+  // } else if (sortType === "enrollment") {
+  //   sortedClasses.sort((a, b) => b.totalEnrollment - a.totalEnrollment);
+  // }
 
   return (
     <div>

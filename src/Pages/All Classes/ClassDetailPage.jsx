@@ -35,9 +35,9 @@ const ClassDetailPage = () => {
     }
 
     return (
-        <div className="container mx-auto px-4 py-16 bg-gray-100">
+        <div className="container mx-auto py-16 px-16 bg-[#FDF6EA] ">
             {/* Card Layout */}
-            <div className="card lg:card-side bg-base-100 shadow-xl">
+            <div className="card lg:card-side bg-[#F5E9D4] shadow-xl p-8">
                 {/* Class Image */}
                 <figure className="lg:w-1/2">
                     <img
@@ -74,7 +74,7 @@ const ClassDetailPage = () => {
                             to="/payment"
                             state={{ price: singleClass.price }} // Pass price to the payment page
                         >
-                            <button className="btn btn-primary px-6 rounded-3xl">Pay</button>
+                            <button className="btn bg-[#D08345] px-8 rounded-3xl">Pay</button>
                         </Link>
 
                     </div>

@@ -38,7 +38,7 @@ const TeacherForm = () => {
   };
 
   return (
-    <div className="p-12 bg-green-200">
+    <div className="p-12 bg-[#FDF6EA]">
       <h2 className="text-xl font-bold">Apply to Become a Teacher</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>

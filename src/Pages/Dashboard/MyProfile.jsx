@@ -18,9 +18,9 @@ const MyProfile = () => {
                     <p>Email : {user?.email}</p>
                     <p>Phone : 0178688560</p>
                     <p>Role : </p>
-                    <div className="card-actions justify-end">
+                    {/* <div className="card-actions justify-end">
                         <button className="btn btn-primary">Enroll Now</button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
