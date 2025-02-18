@@ -15,7 +15,7 @@ export function NavbarComp() {
 
 
   return (
-    <Navbar fluid rounded className="  w-full bg-opacity-50 bg-white ">
+    <Navbar fluid rounded className="  w-full bg-opacity-50 bg-[#FDF6EA] px-8 ">
       <Navbar.Brand href="https://flowbite-react.com">
 
         <Link to={'/'}>
@@ -28,14 +28,14 @@ export function NavbarComp() {
             <>
               <img className="w-11 rounded-full mr-3" src={user?.photoURL} alt="" />
 
-              <Button onClick={() => {
+              <Button className="bg-[#D08345]" onClick={() => {
                 userLogOut();
                 navigate('/')
               }}>Logout</Button>
             </>
             :
             <Link to={'/login'}>
-              <Button>Login</Button>
+              <Button className="bg-[#D08345]">Login</Button>
             </Link>
         }
         <Navbar.Toggle />
@@ -49,12 +49,19 @@ export function NavbarComp() {
         <NavLink to={'allClass'}>
           <Navbar.Link href="#">All Classes</Navbar.Link>
         </NavLink>
-        <NavLink to={'/teacherForm'}>
-          <Navbar.Link href="#">Teach on Acadmia</Navbar.Link>
+        <NavLink to={'/aboutUs'}>
+          <Navbar.Link href="#">About</Navbar.Link>
         </NavLink>
-        <NavLink to={'/dashboard'}>
-          <Navbar.Link href="#">Dashboard</Navbar.Link>
-        </NavLink>
+        {
+          user && <>
+            <NavLink to={'/teacherForm'}>
+              <Navbar.Link href="#">Teach on Acadmia</Navbar.Link>
+            </NavLink>
+            <NavLink to={'/dashboard'}>
+              <Navbar.Link href="#">Dashboard</Navbar.Link>
+            </NavLink>
+          </>
+        }
 
       </Navbar.Collapse>
     </Navbar>

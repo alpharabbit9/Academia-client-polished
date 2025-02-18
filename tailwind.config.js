@@ -8,10 +8,14 @@ export default {
     flowbite.content(), // Including Flowbite content paths
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        garamond: ["EB Garamond", "serif"], // Add Garamond font
+      },
+    },
   },
   plugins: [
     flowbite.plugin(),  // Flowbite plugin
-    require('daisyui')  // DaisyUI plugin
+    require("daisyui"), // DaisyUI plugin
   ],
-}
+};

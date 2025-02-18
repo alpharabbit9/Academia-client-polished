@@ -11,7 +11,7 @@ const FeedbackSection = () => {
     }, []);
 
     return (
-        <div className="feedback-section py-10 bg-gray-100">
+        <div className="feedback-section py-10 bg-[#F5E9D4]">
             <h2 className="text-3xl font-bold text-center mb-8">Teacher Feedback</h2>
             <div className="carousel w-full max-w-3xl mx-auto">
                 {feedbacks.map((feedback, index) => (
@@ -20,7 +20,7 @@ const FeedbackSection = () => {
                         id={`slide${index}`}
                         className="carousel-item w-full flex flex-col items-center justify-center"
                     >
-                        <div className="p-6 bg-white shadow-md rounded-lg text-center w-3/4">
+                        <div className="p-6 bg-[#FDF6EA] shadow-md rounded-lg text-center mx-auto w-11/12">
                             <img
                                 src={feedback.image}
                                 alt={feedback.name}

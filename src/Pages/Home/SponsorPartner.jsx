@@ -7,7 +7,7 @@ import unsplash from '../../assets/Partners/unsp.png'
 
 const SponsorPartner = () => {
     return (
-        <div className="bg-gray-50 py-12">
+        <div className="bg-[#FDF6EA] py-12">
             <div className="container mx-auto px-4">
                 <h2 className="text-center text-2xl font-bold text-gray-800 mb-6">
                     Trusted by Our Partners

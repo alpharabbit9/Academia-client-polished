@@ -4,15 +4,15 @@ import { Link } from "react-router-dom";
 
 const JoinAsTeacher = () => {
     return (
-        <section className="relative  py-12 rounded-3xl">
+        <section className="relative  py-12 rounded-3xl transition-transform duration-300 hover:scale-105">
             {/* Overlay with opacity */}
-            <div className="absolute inset-0 bg-blue-600 opacity-60 rounded-3xl"></div>
+            <div className="absolute inset-0 bg-[#D08345] opacity-60 rounded-3xl "></div>
 
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                     {/* Left Side - Image */}
                     <div className="relative">
-                        <div className="absolute inset-0 bg-blue-500 rounded-lg -z-10 w-4/5 h-4/5 left-6 top-6"></div>
+                        <div className="absolute inset-0 bg-[#D08345] rounded-lg -z-10 w-4/5 h-4/5 left-6 top-6"></div>
                         <img
                             src={teacher}
                             alt="Join as Teacher"
@@ -28,7 +28,7 @@ const JoinAsTeacher = () => {
                             and platform to help you teach with ease.
                         </p>
                         <Link to={'/teacherForm'}>
-                            <button className="mt-6 bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
+                            <button className="mt-6 bg-white text-[#D08345] px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition">
                                 Start Teaching Today
                             </button>
                         </Link>

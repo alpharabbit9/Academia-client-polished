@@ -7,7 +7,7 @@ const Root = () => {
 
     const noHeaderFooter = location.pathname.includes('login');
     return (
-        <div>
+        <div className='bg-[#FDF6EA] text-gray-900'>
             <header>
 
                 {noHeaderFooter ||<NavbarComp></NavbarComp>}

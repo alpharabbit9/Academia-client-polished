@@ -19,6 +19,7 @@ import TeacherForm from '../Pages/Home/TeacherForm';
 import AllClasses from '../Pages/All Classes/AllClasses';
 import ClassDetailPage from '../Pages/All Classes/ClassDetailPage';
 import Payment from '../Components/Payment';
+import AboutUs from '../Pages/About US/AboutUs';
 
 const Router = createBrowserRouter([
     {
@@ -60,6 +61,10 @@ const Router = createBrowserRouter([
                     <Payment></Payment>
                 </PrivateRoute>
             },
+            {
+                path:'aboutUs',
+                element:<AboutUs></AboutUs>
+            }
 
 
         ]

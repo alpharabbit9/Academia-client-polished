@@ -1,21 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CourseCard = ({course}) => {
 
-    const {title,description,image,price,teacher} = course ;
+    const {_id ,title,description,image,price,teacher} = course ;
     return (
-        <div className="card card-compact bg-base-100 w-96 shadow-xl">
+        <div className="card card-compact bg-[#FDF6EA] p-4  border-spacing-2 border-gray-950 border w-80 shadow-xl transition-transform duration-300 hover:scale-105">
             <figure>
-                <img
+                <img className='w-80'
                     src={image}
                     alt="Shoes" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{title}</h2>
                 <p>{description}</p>
-                <div className="card-actions justify-end">
-                    <button className="btn btn-success w-full mb-3">Enroll Now</button>
-                </div>
+                <Link to={`/class/${_id}`}>
+            <button className="btn bg-[#D08345]  px-6 rounded-3xl">View Details</button>
+          </Link>
             </div>
         </div>
     );

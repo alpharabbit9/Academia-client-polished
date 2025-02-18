@@ -14,15 +14,15 @@ const Home = () => {
         <div>
             <BannerComp></BannerComp>
 
-            <section>
+            <section  className='w-11/12 mx-auto '>
                 <SponsorPartner></SponsorPartner>
             </section>
-            <section className='w-11/12 mx-auto mt-12 mb-12'>
+            <section className='w-10/12 mx-auto mt-12 mb-12'>
 
             <HotCourses></HotCourses>
 
             </section>
-            <section className='w-11/12 mx-auto  mt-12 mb-12'>
+            <section className='w-11/12 mx-auto  mt-12 mb-12 transition-transform duration-300 hover:scale-105'>
                 <Stats></Stats>
             </section>
             <section className='w-11/12 mx-auto mt-3 mb-3'>
@@ -36,7 +36,7 @@ const Home = () => {
                 <DownloadApp></DownloadApp>
             </section>
 
-            <section className='w-11/12 mx-auto mt-3 mb-3'>
+            <section className='w-11/12 mx-auto mt-3 mb-3 transition-transform duration-300 hover:scale-105'>
 
             <FeedbackSection></FeedbackSection>
 
